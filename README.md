@@ -1,1 +1,0 @@
-# berkayaskar06.github.io
