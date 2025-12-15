@@ -1,177 +1,182 @@
-<!doctype html>
-<html lang="tr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Pet Agenda – Destek</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pet Agenda destek sayfası: SSS, sorun giderme, bildirim izinleri, veri silme talebi, iletişim ve sürüm notları.">
-  <link rel="icon" href="favicon.ico">
-  <meta property="og:title" content="Pet Agenda – Destek">
-  <meta property="og:description" content="Pet Agenda için yardım ve destek. Sorun giderme, SSS, veri silme ve iletişim.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://<kullanici_adiniz>.github.io/pet-agenda-support/">
-  <meta property="og:image" content="https://<kullanici_adiniz>.github.io/pet-agenda-support/og-image.png">
-
-  <style>
-    :root { --bg:#0b0c0f; --fg:#f4f6f8; --muted:#b6b9c0; --card:#151821; --acc:#5ee1a1; --link:#7cc7ff; }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#ffffff; --fg:#0b0c0f; --muted:#4b4f57; --card:#f6f7f9; --acc:#16a085; --link:#0067c0; }
-    }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
-    .wrap{max-width:920px;margin:0 auto;padding:24px}
-    header{display:flex;gap:16px;align-items:center;margin:16px 0 8px}
-    header img{width:56px;height:56px;border-radius:14px}
-    h1{font-size:1.8rem;margin:0}
-    .tag{background:var(--card);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:.85rem}
-    nav{margin:16px 0 24px;display:flex;flex-wrap:wrap;gap:8px}
-    nav a{color:var(--fg);text-decoration:none;background:var(--card);padding:8px 12px;border-radius:12px}
-    section{background:var(--card);padding:18px;border-radius:16px;margin:14px 0}
-    .kicker{color:var(--muted);font-size:.9rem;margin-top:-4px}
-    a{color:var(--link)}
-    .btn{display:inline-block;background:var(--acc);color:#092; color:#062; padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-    .btn.invert{background:transparent;border:2px solid var(--acc);color:var(--fg)}
-    details summary{cursor:pointer;font-weight:600}
-    code,kbd{background:#00000022;border-radius:6px;padding:2px 6px}
-    footer{color:var(--muted);font-size:.9rem;margin:24px 0}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
-    ul{margin:0 0 0 18px}
-  </style>
-
-  <!-- FAQ / Support structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Bildirimler gelmiyor, ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"iOS: Ayarlar > Bildirimler > Pet Agenda > İzin Ver açık olsun. Odak modunda sessize alınmadığından emin olun. Uygulama içinden hatırlatıcıların aktif olduğunu kontrol edin."}},
-      {"@type":"Question","name":"Verilerim nerede saklanıyor?","acceptedAnswer":{"@type":"Answer","text":"Pet Agenda verileri cihazınızın yerel veritabanında saklanır. Bulut ile otomatik paylaşım yapmayız."}},
-      {"@type":"Question","name":"Cihazlar arasında senkron var mı?","acceptedAnswer":{"@type":"Answer","text":"Şu an yerel saklama kullanıyoruz. Gelecek sürümlerde opsiyonel bulut senkronu planlıyoruz."}},
-      {"@type":"Question","name":"Veri silme talebi nasıl yaparım?","acceptedAnswer":{"@type":"Answer","text":"Uygulama içinden Ayarlar > Verileri Temizle ile silebilirsiniz. Ayrıca destek e-postasına ‘Veri Silme Talebi’ başlıklı bir mesaj gönderebilirsiniz: [berkayaskar12@gmail.com]."}},
-      {"@type":"Question","name":"Hangi hatırlatıcılar var?","acceptedAnswer":{"@type":"Answer","text":"Mama & Su, İlaç, Egzersiz, Temizlik, Bakım, Veteriner. Ayrıca Özel Hatırlatıcı oluşturabilirsiniz."}}
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Roadie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #F48C06;
+            --dark: #1a1a2e;
+            --gray: #7F8C8D;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--dark);
+            color: #fff;
+            line-height: 1.8;
+        }
+        nav {
+            padding: 1rem 2rem;
+            background: rgba(26, 26, 46, 0.95);
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .intro {
+            color: #ccc;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+        p, li {
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+        a { color: var(--primary); }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-card h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .contact-card a {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .faq-item h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--gray);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <img src="app-icon.png" alt="Pet Agenda uygulama ikonu">
-      <div>
-        <h1>Pet Agenda – Destek</h1>
-        <div class="kicker">Evcil dostlarınız için akıllı hatırlatıcı uygulaması</div>
-      </div>
-    </header>
-
-    <nav aria-label="Bölümler">
-      <a href="#hizli-baslangic">Hızlı Başlangıç</a>
-      <a href="#sss">SSS</a>
-      <a href="#sorun-giderme">Sorun Giderme</a>
-      <a href="#bildirim-izinleri">Bildirim İzinleri</a>
-      <a href="#veri-gizlilik">Veri & Gizlilik</a>
-      <a href="#iletisim">İletişim</a>
-      <a href="#surum-notlari">Sürüm Notları</a>
+    <nav>
+        <a href="/" class="logo">🗺️ Roadie</a>
     </nav>
-
-    <section id="hizli-baslangic">
-      <h2>Hızlı Başlangıç</h2>
-      <p>1) Adınızı girin → 2) İlk evcil hayvanınızı ekleyin → 3) Varsayılan veya Özel Hatırlatıcı oluşturun → 4) Bildirimleri açık tutun.</p>
-      <div class="grid">
-        <div>
-          <h3>Mağaza Linkleri</h3>
-          <p><a class="btn" href="[APP_STORE_URL]" target="_blank" rel="noopener">App Store’dan İndir</a></p>
-          <p><a class="btn invert" href="https://play.google.com/store/apps/details?id=com.petagenda" target="_blank" rel="noopener">Google Play</a></p>
+    
+    <div class="container">
+        <h1>Support Center</h1>
+        <p class="intro">We're here to help! Find answers to common questions or contact us directly.</p>
+        
+        <h2>📧 Contact Us</h2>
+        <div class="contact-card">
+            <h3>General Support</h3>
+            <p>For questions about using Roadie, features, or technical issues.</p>
+            <a href="mailto:support@roadie.app">support@roadie.app</a>
         </div>
-        <div>
-          <h3>Destek Hattı</h3>
-          <p>Yardım mı lazım? Bize yazın: <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></p>
-          <p>Hızlı hata raporu: 
-            <a href="mailto:[berkayaskar12@gmail.com]?subject=Hata%20Raporu%20-%20Pet%20Agenda&body=Cihaz%20Modeli:%0AiOS%20S%C3%BCr%C3%BCm%C3%BC:%0AUygulama%20S%C3%BCr%C3%BCm%C3%BC:%0AAd%C4%B1mlar:%0AEkran%20Kayd%C4%B1/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20var%20m%C4%B1?:%0A">E-posta Şablonu</a>
-          </p>
+        
+        <div class="contact-card">
+            <h3>Billing & Subscriptions</h3>
+            <p>For questions about payments, refunds, or subscription management.</p>
+            <a href="mailto:billing@roadie.app">billing@roadie.app</a>
         </div>
-      </div>
-    </section>
-
-    <section id="sss">
-      <h2>SSS (Sık Sorulan Sorular)</h2>
-      <details>
-        <summary>Verilerim nerede saklanıyor?</summary>
-        <p>Tüm veriler cihazınızda (yerel veritabanı) saklanır. Buluta otomatik gönderim yapılmaz.</p>
-      </details>
-      <details>
-        <summary>Bildirimler gelmiyor, ne yapmalıyım?</summary>
-        <ul>
-          <li>iOS: <kbd>Ayarlar &gt; Bildirimler &gt; Pet Agenda</kbd> → “Bildirimlere İzin Ver” açık olmalı.</li>
-          <li>Odak (Focus) modunda sessize alınmadığından emin olun.</li>
-          <li>Uygulama içi hatırlatıcılar “Açık” durumda olsun.</li>
-        </ul>
-      </details>
-      <details>
-        <summary>Cihazlar arasında senkron var mı?</summary>
-        <p>Şimdilik yok. Gelecekte opsiyonel senkron eklemeyi planlıyoruz.</p>
-      </details>
-      <details>
-        <summary>Özel hatırlatıcı oluşturabilir miyim?</summary>
-        <p>Evet. Başlık/açıklama/sıklık alanlarını kullanarak tamamen size özel hatırlatıcılar ekleyebilirsiniz.</p>
-      </details>
-      <details>
-        <summary>Hangi türler destekleniyor?</summary>
-        <p>Kedi, köpek, kuş, balık, hamster, tavşan ve daha fazlası.</p>
-      </details>
-    </section>
-
-    <section id="sorun-giderme">
-      <h2>Sorun Giderme</h2>
-      <ul>
-        <li><strong>Uygulama bildirim göndermiyor:</strong> Bildirim izinlerini kontrol edin (aşağıdaki rehbere bakın) ve cihazınızı yeniden başlatın.</li>
-        <li><strong>Hatırlatıcı çalışmadı:</strong> Hatırlatıcı saatini ve tekrarlama ayarını kontrol edin; “Kapalı” değil “Açık” olduğundan emin olun.</li>
-        <li><strong>Performans sorunları:</strong> Arka planda çok sayıda uygulama açıksa kapatın; son sürümü kullandığınızdan emin olun.</li>
-      </ul>
-    </section>
-
-    <section id="bildirim-izinleri">
-      <h2>Bildirim İzinleri (iOS)</h2>
-      <ol>
-        <li><kbd>Ayarlar &gt; Bildirimler &gt; Pet Agenda</kbd> yolunu izleyin.</li>
-        <li>“Bildirimlere İzin Ver” seçeneğini açın.</li>
-        <li>Uyarı stili: Kilit Ekranı, Bildirim Merkezi ve Afişleri aktif edin.</li>
-        <li>Ses ve Rozet isterseniz aktif edin.</li>
-      </ol>
-      <p>Uygulama içinden <em>Ayarlar &gt; Bildirimler</em> bölümünde hatırlatıcılarınızı tek tek etkinleştirebilirsiniz.</p>
-    </section>
-
-    <section id="veri-gizlilik">
-      <h2>Veri & Gizlilik</h2>
-      <p>Pet Agenda, kişisel verilerinizi minimum düzeyde işler ve verilerinizi cihazınızda saklar. Üçüncü tarafla paylaşım yapılmaz.</p>
-      <ul>
-        <li><a href="[PRIVACY_URL]">Gizlilik Politikası</a> (tam metin)</li>
-        <li><strong>Veri Silme Talebi:</strong> Uygulama içinden “Verileri Temizle” veya e-posta gönderin: <a href="mailto:[berkayaskar12@gmail.com]?subject=Veri%20Silme%20Talebi%20-%20Pet%20Agenda">[berkayaskar12@gmail.com]</a></li>
-        <li><strong>İletişim:</strong> <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></li>
-      </ul>
-    </section>
-
-    <section id="surum-notlari">
-      <h2>Sürüm Notları</h2>
-      <ul>
-        <li><strong>v1.0.0</strong> – İlk sürüm: Çoklu pet, akıllı hatırlatıcılar, arka planda bildirimler, özel hatırlatıcı, profil fotoğrafları.</li>
-      </ul>
-    </section>
-
-    <section id="iletisim">
-      <h2>İletişim</h2>
-      <p>Destek ekibine e-posta ile ulaşabilirsiniz: <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></p>
-      <p>Hızlı geri bildirim: 
-        <a class="btn invert" href="mailto:[berkayaskar12@gmail.com]?subject=Geri%20Bildirim%20-%20Pet%20Agenda">E-posta Gönder</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>© <span id="yil"></span> Pet Agenda • Tüm hakları saklıdır.</p>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('yil').textContent = new Date().getFullYear();
-  </script>
+        
+        <div class="contact-card">
+            <h3>Privacy Concerns</h3>
+            <p>For data-related requests or privacy questions.</p>
+            <a href="mailto:privacy@roadie.app">privacy@roadie.app</a>
+        </div>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <h3>How do I create my first trip?</h3>
+            <p>Open the app, tap "Create Trip", enter your destination and dates, select your travel preferences, and let our AI generate your personalized itinerary!</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Can I edit my itinerary?</h3>
+            <p>Yes! You can add custom stops, remove activities, reorder your day, and adjust timings. Your route will be automatically re-optimized.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Does Roadie work offline?</h3>
+            <p>Premium users can download trips for offline access. This includes maps, itineraries, and all Roadie Tips. Perfect for international travel!</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>How do I cancel my subscription?</h3>
+            <p>Subscriptions are managed through the App Store (iOS) or Google Play (Android). Go to your device's subscription settings to cancel or modify your plan.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Why does Roadie need my location?</h3>
+            <p>Location access enables real-time navigation, nearby place discovery, and tracking your position on the map. You can disable it in your device settings at any time.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>How do I delete my account?</h3>
+            <p>Go to Profile → Settings → Delete Account. This will permanently remove all your data. You can also email privacy@roadie.app for account deletion.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Is my data secure?</h3>
+            <p>Yes! We use industry-standard encryption for all data. Your personal information is never sold to third parties. Read our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </div>
+        
+        <h2>📱 App Version</h2>
+        <p>Current version: 1.0.0</p>
+        <p>Make sure you're running the latest version for the best experience. Updates are available on the App Store and Google Play.</p>
+        
+        <h2>💡 Feature Requests</h2>
+        <p>Have an idea to make Roadie better? We'd love to hear from you! Send your suggestions to <a href="mailto:feedback@roadie.app">feedback@roadie.app</a></p>
+        
+        <footer>
+            <p>&copy; 2024 Roadie Travel. All rights reserved.</p>
+            <p><a href="/">Back to Home</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </footer>
+    </div>
 </body>
 </html>
+

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Pet Agenda – Destek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pet Agenda destek sayfası: SSS, sorun giderme, bildirim izinleri, veri silme talebi, iletişim ve sürüm notları.">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Pet Agenda – Destek">
+  <meta property="og:description" content="Pet Agenda için yardım ve destek. Sorun giderme, SSS, veri silme ve iletişim.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://<kullanici_adiniz>.github.io/pet-agenda-support/">
+  <meta property="og:image" content="https://<kullanici_adiniz>.github.io/pet-agenda-support/og-image.png">
+
+  <style>
+    :root { --bg:#0b0c0f; --fg:#f4f6f8; --muted:#b6b9c0; --card:#151821; --acc:#5ee1a1; --link:#7cc7ff; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#ffffff; --fg:#0b0c0f; --muted:#4b4f57; --card:#f6f7f9; --acc:#16a085; --link:#0067c0; }
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:920px;margin:0 auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;margin:16px 0 8px}
+    header img{width:56px;height:56px;border-radius:14px}
+    h1{font-size:1.8rem;margin:0}
+    .tag{background:var(--card);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:.85rem}
+    nav{margin:16px 0 24px;display:flex;flex-wrap:wrap;gap:8px}
+    nav a{color:var(--fg);text-decoration:none;background:var(--card);padding:8px 12px;border-radius:12px}
+    section{background:var(--card);padding:18px;border-radius:16px;margin:14px 0}
+    .kicker{color:var(--muted);font-size:.9rem;margin-top:-4px}
+    a{color:var(--link)}
+    .btn{display:inline-block;background:var(--acc);color:#092; color:#062; padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.invert{background:transparent;border:2px solid var(--acc);color:var(--fg)}
+    details summary{cursor:pointer;font-weight:600}
+    code,kbd{background:#00000022;border-radius:6px;padding:2px 6px}
+    footer{color:var(--muted);font-size:.9rem;margin:24px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    ul{margin:0 0 0 18px}
+  </style>
+
+  <!-- FAQ / Support structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Bildirimler gelmiyor, ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"iOS: Ayarlar > Bildirimler > Pet Agenda > İzin Ver açık olsun. Odak modunda sessize alınmadığından emin olun. Uygulama içinden hatırlatıcıların aktif olduğunu kontrol edin."}},
+      {"@type":"Question","name":"Verilerim nerede saklanıyor?","acceptedAnswer":{"@type":"Answer","text":"Pet Agenda verileri cihazınızın yerel veritabanında saklanır. Bulut ile otomatik paylaşım yapmayız."}},
+      {"@type":"Question","name":"Cihazlar arasında senkron var mı?","acceptedAnswer":{"@type":"Answer","text":"Şu an yerel saklama kullanıyoruz. Gelecek sürümlerde opsiyonel bulut senkronu planlıyoruz."}},
+      {"@type":"Question","name":"Veri silme talebi nasıl yaparım?","acceptedAnswer":{"@type":"Answer","text":"Uygulama içinden Ayarlar > Verileri Temizle ile silebilirsiniz. Ayrıca destek e-postasına ‘Veri Silme Talebi’ başlıklı bir mesaj gönderebilirsiniz: [berkayaskar12@gmail.com]."}},
+      {"@type":"Question","name":"Hangi hatırlatıcılar var?","acceptedAnswer":{"@type":"Answer","text":"Mama & Su, İlaç, Egzersiz, Temizlik, Bakım, Veteriner. Ayrıca Özel Hatırlatıcı oluşturabilirsiniz."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="app-icon.png" alt="Pet Agenda uygulama ikonu">
+      <div>
+        <h1>Pet Agenda – Destek</h1>
+        <div class="kicker">Evcil dostlarınız için akıllı hatırlatıcı uygulaması</div>
+      </div>
+    </header>
+
+    <nav aria-label="Bölümler">
+      <a href="#hizli-baslangic">Hızlı Başlangıç</a>
+      <a href="#sss">SSS</a>
+      <a href="#sorun-giderme">Sorun Giderme</a>
+      <a href="#bildirim-izinleri">Bildirim İzinleri</a>
+      <a href="#veri-gizlilik">Veri & Gizlilik</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="#surum-notlari">Sürüm Notları</a>
+    </nav>
+
+    <section id="hizli-baslangic">
+      <h2>Hızlı Başlangıç</h2>
+      <p>1) Adınızı girin → 2) İlk evcil hayvanınızı ekleyin → 3) Varsayılan veya Özel Hatırlatıcı oluşturun → 4) Bildirimleri açık tutun.</p>
+      <div class="grid">
+        <div>
+          <h3>Mağaza Linkleri</h3>
+          <p><a class="btn" href="[APP_STORE_URL]" target="_blank" rel="noopener">App Store’dan İndir</a></p>
+          <p><a class="btn invert" href="https://play.google.com/store/apps/details?id=com.petagenda" target="_blank" rel="noopener">Google Play</a></p>
+        </div>
+        <div>
+          <h3>Destek Hattı</h3>
+          <p>Yardım mı lazım? Bize yazın: <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></p>
+          <p>Hızlı hata raporu: 
+            <a href="mailto:[berkayaskar12@gmail.com]?subject=Hata%20Raporu%20-%20Pet%20Agenda&body=Cihaz%20Modeli:%0AiOS%20S%C3%BCr%C3%BCm%C3%BC:%0AUygulama%20S%C3%BCr%C3%BCm%C3%BC:%0AAd%C4%B1mlar:%0AEkran%20Kayd%C4%B1/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20var%20m%C4%B1?:%0A">E-posta Şablonu</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sss">
+      <h2>SSS (Sık Sorulan Sorular)</h2>
+      <details>
+        <summary>Verilerim nerede saklanıyor?</summary>
+        <p>Tüm veriler cihazınızda (yerel veritabanı) saklanır. Buluta otomatik gönderim yapılmaz.</p>
+      </details>
+      <details>
+        <summary>Bildirimler gelmiyor, ne yapmalıyım?</summary>
+        <ul>
+          <li>iOS: <kbd>Ayarlar &gt; Bildirimler &gt; Pet Agenda</kbd> → “Bildirimlere İzin Ver” açık olmalı.</li>
+          <li>Odak (Focus) modunda sessize alınmadığından emin olun.</li>
+          <li>Uygulama içi hatırlatıcılar “Açık” durumda olsun.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Cihazlar arasında senkron var mı?</summary>
+        <p>Şimdilik yok. Gelecekte opsiyonel senkron eklemeyi planlıyoruz.</p>
+      </details>
+      <details>
+        <summary>Özel hatırlatıcı oluşturabilir miyim?</summary>
+        <p>Evet. Başlık/açıklama/sıklık alanlarını kullanarak tamamen size özel hatırlatıcılar ekleyebilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Hangi türler destekleniyor?</summary>
+        <p>Kedi, köpek, kuş, balık, hamster, tavşan ve daha fazlası.</p>
+      </details>
+    </section>
+
+    <section id="sorun-giderme">
+      <h2>Sorun Giderme</h2>
+      <ul>
+        <li><strong>Uygulama bildirim göndermiyor:</strong> Bildirim izinlerini kontrol edin (aşağıdaki rehbere bakın) ve cihazınızı yeniden başlatın.</li>
+        <li><strong>Hatırlatıcı çalışmadı:</strong> Hatırlatıcı saatini ve tekrarlama ayarını kontrol edin; “Kapalı” değil “Açık” olduğundan emin olun.</li>
+        <li><strong>Performans sorunları:</strong> Arka planda çok sayıda uygulama açıksa kapatın; son sürümü kullandığınızdan emin olun.</li>
+      </ul>
+    </section>
+
+    <section id="bildirim-izinleri">
+      <h2>Bildirim İzinleri (iOS)</h2>
+      <ol>
+        <li><kbd>Ayarlar &gt; Bildirimler &gt; Pet Agenda</kbd> yolunu izleyin.</li>
+        <li>“Bildirimlere İzin Ver” seçeneğini açın.</li>
+        <li>Uyarı stili: Kilit Ekranı, Bildirim Merkezi ve Afişleri aktif edin.</li>
+        <li>Ses ve Rozet isterseniz aktif edin.</li>
+      </ol>
+      <p>Uygulama içinden <em>Ayarlar &gt; Bildirimler</em> bölümünde hatırlatıcılarınızı tek tek etkinleştirebilirsiniz.</p>
+    </section>
+
+    <section id="veri-gizlilik">
+      <h2>Veri & Gizlilik</h2>
+      <p>Pet Agenda, kişisel verilerinizi minimum düzeyde işler ve verilerinizi cihazınızda saklar. Üçüncü tarafla paylaşım yapılmaz.</p>
+      <ul>
+        <li><a href="[PRIVACY_URL]">Gizlilik Politikası</a> (tam metin)</li>
+        <li><strong>Veri Silme Talebi:</strong> Uygulama içinden “Verileri Temizle” veya e-posta gönderin: <a href="mailto:[berkayaskar12@gmail.com]?subject=Veri%20Silme%20Talebi%20-%20Pet%20Agenda">[berkayaskar12@gmail.com]</a></li>
+        <li><strong>İletişim:</strong> <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></li>
+      </ul>
+    </section>
+
+    <section id="surum-notlari">
+      <h2>Sürüm Notları</h2>
+      <ul>
+        <li><strong>v1.0.0</strong> – İlk sürüm: Çoklu pet, akıllı hatırlatıcılar, arka planda bildirimler, özel hatırlatıcı, profil fotoğrafları.</li>
+      </ul>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <p>Destek ekibine e-posta ile ulaşabilirsiniz: <a href="mailto:[berkayaskar12@gmail.com]">[berkayaskar12@gmail.com]</a></p>
+      <p>Hızlı geri bildirim: 
+        <a class="btn invert" href="mailto:[berkayaskar12@gmail.com]?subject=Geri%20Bildirim%20-%20Pet%20Agenda">E-posta Gönder</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="yil"></span> Pet Agenda • Tüm hakları saklıdır.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yil').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
