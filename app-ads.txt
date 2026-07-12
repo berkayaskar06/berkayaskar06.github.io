@@ -1,1 +1,4 @@
+# app-ads.txt — berkayaskar06.github.io
+# Covers all apps with this domain set as Developer Website in App Store Connect:
+# Roadie, Outfitter, Pet Agenda, FoodKin
 google.com, pub-1571025488030227, DIRECT, f08c47fec0942fa0
